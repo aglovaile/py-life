@@ -11,7 +11,7 @@ class Grid:
 
     def __init__(self):
         self.grid = []
-        self.cols = Grid._size.columns // 2
+        self.cols = Grid._size.columns - 5
         self.rows = Grid._size.lines - 4
 
         for i in range(self.rows):

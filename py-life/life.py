@@ -71,6 +71,8 @@ def check_for_neighbors(grid):
                 for cell in neighbors:
                     if cell not in check_list:
                         check_list.append(cell)
+                if [i,j] not in check_list:
+                    check_list.append([i,j])
 
     return check_list
 

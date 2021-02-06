@@ -36,7 +36,7 @@ def check_if_alive(grid):
                 return True
     return False
 
-def iterate(grid, num, slp=0):
+def iterate(grid, num, slp=.05):
     print_grid(grid.grid)
     for i in range(-1, num):
         if check_if_alive(grid):
